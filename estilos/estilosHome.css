@@ -1,0 +1,167 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.cuerpoindex {background: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:320px){
+
+/*Header*/
+header{
+    background: #2B7A78; 
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    z-index: 99;
+    
+}
+
+.tituloheader{
+    color: #fff;
+    
+    
+}
+
+/*Footer*/
+
+footer{
+    background:#2B7A78; 
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.textofooter{
+    color: #fff;    
+}
+
+
+/*Cuerpo index*/
+
+.mainindex{
+    padding-top:10vw;
+}
+.captioncarousel{
+    opacity: 50%;
+    font-size: 40px;
+}
+
+.descargadebrochuretexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+.slogan{
+    text-align: center;
+    font-weight: bold;
+}
+
+.especificaciones{
+    text-align: center;
+
+}
+
+.botonbrochure{
+    text-align: center;
+    background-color:#2B7A78;
+    width:190px;
+    height: 30px;
+    border-radius: 5%;
+}
+
+.linkabrochure{
+    text-decoration: none;
+    color: #feffff;
+}
+
+.descargadebrochureimg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(33vw 67vw);
+    grid-template-rows: repeat(2 50%);
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-areas:
+    "gridbrohome1 gridbrohome2"
+    "gridbrohome1 gridbrohome3";
+}
+
+
+.grid1{
+    grid-area: gridbrohome1;
+}
+
+.gridbrohome1{
+    height: 100%;
+    width: 33vw;
+}
+
+.grid2{
+    grid-area: gridbrohome2;
+}
+
+.gridbrohome2{
+    height: 100%;
+    width: 67vw;
+   
+}
+
+.grid3{
+    grid-area: gridbrohome3;   
+}
+
+.gridbrohome3{
+    height: 100%;
+    width: 67vw;
+}
+
+
+.ubicacion{
+    padding-top:20px;
+    padding-bottom:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa{
+    width: 100vw;
+}
+
+
+.mensajecontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.cajaform{
+    width: 90vw;
+}
+   
+.cajaformmensaje{
+    width: 90vw;
+    height: 200px;
+}
+
+.botonform{
+    width: 90vw;
+}
+
+.divisores{
+    color: #2B7A78;
+    height: 10px;
+    
+}
+
+}
