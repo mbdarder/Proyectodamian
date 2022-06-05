@@ -44,6 +44,7 @@ footer{
 
 /*Cuerpo index*/
 
+
 .mainindex{
     padding-top:10vw;
 }
@@ -158,6 +159,19 @@ footer{
     width: 90vw;
 }
 
+.whatsapp{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+
+}
+
+.whatsappicono{
+    height: 50px;
+    width: 50px;
+    opacity: 60%;
+    align-self: flex-end;
+}
 .divisores{
     color: #2B7A78;
     height: 10px;
