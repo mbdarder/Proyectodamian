@@ -2,25 +2,33 @@
     margin:0px;
     padding:0px;
 }
-.cuerpoindex {background: #e4e4e4;
+.cuerpoindex {background: #FFFCF2;
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
 }
 
 @media screen and (min-width:320px){
 
 /*Header*/
 header{
-    background: #2B7A78; 
+    background: #EB5E28; 
     width: 100%;
-    height: 5%;
+    min-width:100%;
+    height: 6%;
     position: fixed;
     z-index: 99;
+    display: flex;
+    align-items: center;
+    
     
 }
 
 .tituloheader{
-    color: #fff;
+    font-size: 100%;
+    color: #FFFCF2;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
     
     
 }
@@ -28,7 +36,7 @@ header{
 /*Footer*/
 
 footer{
-    background:#2B7A78; 
+    background:#403D39; 
     width: 100vw;
     height: fit-content;
     display: flex;
@@ -47,18 +55,54 @@ footer{
 
 .mainindex{
     padding-top:10vw;
-}
-.captioncarousel{
-    opacity: 50%;
-    font-size: 40px;
+    padding-right: 0px;
+    max-width: fit-content;
+ 
 }
 
+ .carousel{
+    height: 800px;
+    padding: 0px;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.carouselimg{
+    height: 800px;
+    min-width: 1920px;
+    
+
+} 
+.captioncarousel{
+    opacity: 70%;
+    font-size: 40px;
+    padding-bottom:5px;
+   
+}
+
+
+
+.carousel-indicators{
+    opacity: 0%;
+}
+
+.botonscroll{
+    padding-top:10px;
+    height: 30px;
+    width: 20px;
+    animation:bounce;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
 .descargadebrochuretexto{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top:20px;
     padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
     
 }
 .slogan{
@@ -73,7 +117,7 @@ footer{
 
 .botonbrochure{
     text-align: center;
-    background-color:#2B7A78;
+    background-color:#EB5E28;
     width:190px;
     height: 30px;
     border-radius: 5%;
@@ -85,12 +129,14 @@ footer{
 }
 
 .descargadebrochureimg{
-    width: 100%;
+    
+    padding-right: 0px;
+    
     display: grid;
     grid-template-columns: repeat(33vw 67vw);
     grid-template-rows: repeat(2 50%);
     row-gap: 5px;
-    column-gap: 5px;
+    column-gap: 3px;
     grid-template-areas:
     "gridbrohome1 gridbrohome2"
     "gridbrohome1 gridbrohome3";
@@ -138,12 +184,15 @@ footer{
     width: 100vw;
 }
 
-
+.contacto{
+    max-width: 100vw;
+}
 .mensajecontacto{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+    padding-right: 0px;
 }
 
 .cajaform{
@@ -173,9 +222,26 @@ footer{
     align-self: flex-end;
 }
 .divisores{
-    color: #2B7A78;
+    color: #5e5e5e;
     height: 10px;
     
 }
+
+}
+
+@media screen and (min-width:768px){
+
+    .tituloheader{
+        font-size: 150%;
+    }
+
+    .mainindex{
+        padding-top:0vw;
+    }
+    .captioncarousel{
+        opacity: 70%;
+        font-size: 100px;
+        margin:0;
+    }
 
 }
