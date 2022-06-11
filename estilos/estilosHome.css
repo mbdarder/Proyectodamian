@@ -15,24 +15,34 @@ header{
     background: #EB5E28; 
     width: 100%;
     min-width:100%;
-    height: 6%;
+    height: 9%;
     position: fixed;
     z-index: 99;
-    display: flex;
-    align-items: center;
-    
-    
+    top:0;
 }
 
+.listaheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    z-index: 99;
+}
 .tituloheader{
     font-size: 100%;
+    font-weight: bold;
     color: #FFFCF2;
     font-family:'Montserrat', sans-serif;
-    text-align: center;
-    
-    
+    text-align: center;   
+    z-index: 99;
 }
 
+.edificioheader{
+    height: 50px;
+    width: 50px;
+    z-index: 99;
+}
 /*Footer*/
 
 footer{
@@ -61,22 +71,35 @@ footer{
 }
 
  .carousel{
-    height: 800px;
+    height: 700px;
     padding: 0px;
-    width: 100vw;
-    max-width: 100vw;
+
+    min-width: 100%;
 }
 
 .carouselimg{
-    height: 800px;
-    min-width: 1920px;
+    height: 700px;
+    min-width: 100%;
+    overflow: hidden;
     
-
 } 
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .captioncarousel{
-    opacity: 70%;
-    font-size: 40px;
+    opacity: 80%;
+    font-size: 60px;
     padding-bottom:5px;
+  position: absolute;
+  bottom:19rem;
+  line-height: 50%;
+  left: 5%;
    
 }
 
@@ -107,7 +130,9 @@ footer{
 }
 .slogan{
     text-align: center;
+    font-family: 'Homemade Apple', cursive;
     font-weight: bold;
+    font-size:25px;
 }
 
 .especificaciones{
@@ -224,7 +249,22 @@ footer{
 .divisores{
     color: #5e5e5e;
     height: 10px;
-    
+}
+
+.secciones{
+    display: fle;
+    flex-direction: column;
+    align-items: center;
+}
+.palabrasseparadoras{
+    font-family:'Alfa Slab One', cursive; 
+    font-size:200% ;
+    text-align: center;
+    opacity: 50%;
+}
+
+.caracteristicas{
+    text-align: center;
 }
 
 }
@@ -242,6 +282,26 @@ footer{
         opacity: 70%;
         font-size: 100px;
         margin:0;
+        position:absolute;
+        left: 20%;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+
+    .captioncarousel{
+        position:absolute;
+        left: 25%;
+    }
+
+}
+
+@media screen and (min-width:1440px){
+
+    .captioncarousel{
+        position:absolute;
+        left: 35%;
     }
 
 }
