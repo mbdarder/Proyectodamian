@@ -30,12 +30,13 @@ header{
     z-index: 99;
 }
 .tituloheader{
-    font-size: 100%;
+    font-size: 140%;
     font-weight: bold;
     color: #FFFCF2;
     font-family:'Montserrat', sans-serif;
     text-align: center;   
     z-index: 99;
+    margin-bottom: 0px;
 }
 
 .edificioheader{
@@ -96,10 +97,10 @@ footer{
     opacity: 80%;
     font-size: 60px;
     padding-bottom:5px;
-  position: absolute;
-  bottom:19rem;
+  position: relative;
+  bottom:263px;
   line-height: 50%;
-  left: 5%;
+  text-align: center;
    
 }
 
@@ -123,12 +124,14 @@ footer{
     flex-direction: column;
     align-items: center;
     padding-top:20px;
-    padding-bottom: 20px;
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom:0px;
+    height: fit-content;
     
 }
 .slogan{
+    width: 90%;
     text-align: center;
     font-family: 'Homemade Apple', cursive;
     font-weight: bold;
@@ -146,6 +149,10 @@ footer{
     width:190px;
     height: 30px;
     border-radius: 5%;
+    animation: pulse;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
 }
 
 .linkabrochure{
@@ -154,9 +161,8 @@ footer{
 }
 
 .descargadebrochureimg{
-    
+    padding-bottom: 10px;
     padding-right: 0px;
-    
     display: grid;
     grid-template-columns: repeat(33vw 67vw);
     grid-template-rows: repeat(2 50%);
@@ -167,6 +173,12 @@ footer{
     "gridbrohome1 gridbrohome3";
 }
 
+.frenteedificio{
+    height: 70%;
+    width: 50%;
+    padding-top:10px;
+    padding-bottom:15px;
+}
 
 .grid1{
     grid-area: gridbrohome1;
@@ -196,7 +208,32 @@ footer{
     width: 67vw;
 }
 
+.unidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenunidades{
+    height: 90%;
+    width: 90%;
+    padding-bottom: 10px;
+    
+}
+.listaamenities{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0px;
+}
 
+.fotoamenities{
+    padding-bottom: 10px;
+}
+.amenitiesiconos{
+    height: 60%;
+    width: 80%;
+}
 .ubicacion{
     padding-top:20px;
     padding-bottom:20px;
@@ -209,8 +246,17 @@ footer{
     width: 100vw;
 }
 
+.iconoubicacion{
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    padding-bottom:5px;
+}
 .contacto{
     max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .mensajecontacto{
     display: flex;
@@ -234,11 +280,23 @@ footer{
 }
 
 .whatsapp{
-    display: flex;
-    justify-content: flex-end;
+    position: fixed;
+    z-index: 99;
+    bottom:40px;
+    right: 30px;
+    line-height: 55px;
+    opacity: 80%;
     padding-bottom: 10px;
-
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    transition:3s;
 }
+
+.whatsapp:hover{
+    opacity: 100%;
+}
+
 
 .whatsappicono{
     height: 50px;
@@ -264,7 +322,10 @@ footer{
 }
 
 .caracteristicas{
+    position: relative;
     text-align: center;
+    width: 95%;
+    padding-left: 5%;
 }
 
 }
@@ -282,17 +343,18 @@ footer{
         opacity: 70%;
         font-size: 100px;
         margin:0;
-        position:absolute;
-        left: 20%;
+        position:relative;
+     
     }
 
 }
 
-@media screen and (min-width:1024px){
+/* @media screen and (min-width:1024px){
 
     .captioncarousel{
-        position:absolute;
-        left: 25%;
+        position:relative;
+        bottom:270px;
+        
     }
 
 }
@@ -304,4 +366,4 @@ footer{
         left: 35%;
     }
 
-}
+} */
