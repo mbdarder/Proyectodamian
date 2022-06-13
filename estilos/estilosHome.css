@@ -235,17 +235,21 @@ footer{
     justify-content: center;
     list-style: none;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 30px;
 }
-
+.listaamenitiesitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .fotoamenities{
     padding-bottom: 10px;
     padding-right: 0px;
 }
 .amenitiesiconos{
-    height: 60%;
-    width: 100%;
-    padding:10px;
+    height: 70%;
+    width: 50%;
+    
 }
 .ubicacion{
     padding-top:20px;
