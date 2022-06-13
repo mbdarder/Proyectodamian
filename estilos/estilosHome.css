@@ -14,7 +14,7 @@
 /*Header*/
 .header{
     background: #EB5E28; 
-    width:103%;
+    width:104%;
     height: fit-content;
     position: fixed;
     z-index: 99;
@@ -49,7 +49,7 @@
 
 footer{
     background:#403D39; 
-    max-width: 103%;
+    max-width: 104%;
     height: fit-content;
     display: flex;
     flex-direction: column;
